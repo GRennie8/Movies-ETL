@@ -1,6 +1,4 @@
 # Movies-ETL
-
-# Movies-ETL
 Extract, Transform, Load
 
 ## Purpose
@@ -14,44 +12,53 @@ The project included extracting a large data set from Kaggle, then transforming 
 
 ## Extracting
 Wikipedia Movies JSON file, starting with 193 Columns:
-![Pic 1](https://github.com/Baylex/Movies-ETL/blob/main/Resources/d1_1wiki_movies.PNG)
+<img width="1079" alt="Screen Shot 2022-06-29 at 9 03 25 PM" src="https://user-images.githubusercontent.com/104115586/176584948-06f0fc8a-605a-42d4-ab3a-90734cc3bffd.png">
+
 
 Kaggle Movie Metadata, 24 columns
-![Pic 2](https://github.com/Baylex/Movies-ETL/blob/main/Resources/d1_2kaggle_metadata.PNG)
+<img width="1097" alt="Screen Shot 2022-06-29 at 9 03 41 PM" src="https://user-images.githubusercontent.com/104115586/176584960-d82d9e9c-f86e-4290-a649-f31e68541118.png">
+
 
 Kaggle Ratings data, 2602489 rows by 4 columns
 
-![Pic 3](https://github.com/Baylex/Movies-ETL/blob/main/Resources/d1_3ratings.PNG)
+<img width="402" alt="Screen Shot 2022-06-29 at 9 04 29 PM" src="https://user-images.githubusercontent.com/104115586/176584978-08877e47-e48c-44de-8866-dfd655457c7c.png">
+
+
 
 ## Transforming 
 ### Wikipedia Data
 Wikipedia Movies transformed, 22 columns
-![Pic 4](https://github.com/Baylex/Movies-ETL/blob/main/Resources/d2_1wiki_movies.PNG)
+<img width="1093" alt="Screen Shot 2022-06-29 at 9 04 44 PM" src="https://user-images.githubusercontent.com/104115586/176584999-53406b5d-7a4e-4665-910d-563c0ec785a9.png">
+
 
 Wikipedia Movies, making the column names more succinct and uniform, 7033 rows of data.
-![Pic 5](https://github.com/Baylex/Movies-ETL/blob/main/Resources/d2_2wiki_movie_counts.PNG)
+<img width="712" alt="Screen Shot 2022-06-29 at 9 05 20 PM" src="https://user-images.githubusercontent.com/104115586/176585016-3f4f8ba3-841b-4d0b-a9e7-6128edd11d4e.png">
 
 ### Kaggle Data
 Wikipedia Movies merged with Kaggle Movies data, all column names and row counts, 6052 rows.
-![Pic 8](https://github.com/Baylex/Movies-ETL/blob/main/Resources/d3_6movies.PNG)
+<img width="1107" alt="Screen Shot 2022-06-29 at 9 07 07 PM" src="https://user-images.githubusercontent.com/104115586/176585037-4c3413ac-8674-4acf-af3c-f208ba8f1b59.png">
 
 Merged Movies with Kaggle ratings, all of the column names and row counts, 6052 rows.
+<img width="422" alt="Screen Shot 2022-06-29 at 9 07 44 PM" src="https://user-images.githubusercontent.com/104115586/176585051-dcd7cc66-8192-4070-97b3-693a7ffe3236.png">
 
-![Pic 9](https://github.com/Baylex/Movies-ETL/blob/main/Resources/d3_5movies_ratings.PNG)
+
 
 ## Loading
 ### Creating the Movie Database
 Sending the data to PostgresSQL
-![Pic 10](https://github.com/Baylex/Movies-ETL/blob/main/Resources/d4_final_send.PNG)
+<img width="832" alt="Screen Shot 2022-06-29 at 9 08 04 PM" src="https://user-images.githubusercontent.com/104115586/176585074-85bc5773-4872-4624-a8ef-f98546721626.png">
+
 
 ### Verifying the data in PgAdmin
 Movies Query
 
-![Pic 11](https://github.com/Baylex/Movies-ETL/blob/main/Resources/movies_query.PNG)
+![Screen Shot 2022-06-29 at 9 08 26 PM](https://user-images.githubusercontent.com/104115586/176585086-481fad21-0ddc-4431-b989-ddaf4fff91ec.png)
+
 
 Ratings Query
 
-![Pic 12](https://github.com/Baylex/Movies-ETL/blob/main/Resources/ratings_query.PNG)
+![Screen Shot 2022-06-29 at 9 08 36 PM](https://user-images.githubusercontent.com/104115586/176585103-928d5af8-5291-4db3-89bd-edcf5c4fda74.png)
+
 
 ## Summary
 
